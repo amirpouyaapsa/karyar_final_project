@@ -362,8 +362,6 @@ body {
     width: 100%;
 }
 /* ===============================================  */
-
-
 /* نوار جستجو، مرتب‌سازی و تعداد محصولات */
 .products-toolbar {
     display: grid;
@@ -373,7 +371,6 @@ body {
     /* margin-top: 16px; */
     margin-bottom: 20px;
 }
-
 
 /* نوار مرتب‌سازی */
 .sort-products {
@@ -422,7 +419,6 @@ body {
     white-space: nowrap;
 }
 
-
 /* ============================================= چیدمان محصولات*/
 
 /* چیدمان محصولات */
@@ -453,6 +449,20 @@ body {
     margin-bottom: 16px;
 }
 
+/* تگ ارسال رایگان */
+.free-shipping {
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 8px 14px;
+    background-color: #E8FAF3;
+    color: #0F766E;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
 /* عنوان محصول */
 .product-card h3 {
     margin: 0 0 12px;
@@ -462,7 +472,7 @@ body {
     line-height: 1.8;
 }
 
-.product-card h3 a {
+.product-card a {
     color: inherit;
     text-decoration: none;
     transition: color 0.2s ease;
