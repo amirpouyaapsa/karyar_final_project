@@ -1,4 +1,4 @@
-# karyar_final_project
+# Karyar Final Project
 
 # بازارینو | پروژه فاینال دوره کاریار
 
