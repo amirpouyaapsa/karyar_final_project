@@ -2,6 +2,12 @@
 
 **Bazarino** is an e-commerce website design project developed using HTML5 and CSS3 as the final project of the Karyar course. The goal of this project is to design three interconnected pages of a Persian online store while following the principles of HTML structure, user interface design, responsive layout, and accessibility.
 
+## Live Demo
+
+**[View the Bazarino Website](https://amirpouyaapsa.github.io/karyar_final_project/)**
+
+Click the link above to explore the live version of the project.
+
 ## Project Pages
 
 ### 1. Products Page (`products.html`)
