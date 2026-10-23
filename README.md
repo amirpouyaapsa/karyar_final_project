@@ -1,4 +1,4 @@
-# Bazarino | Karyar Course Final Project · [نسخه فارسی README](README_FA.md)
+# Bazarino | Karyar Course Final Project · [README_FA](README_FA.md)
 
 **Bazarino** is an e-commerce website design project developed using HTML5 and CSS3 as the final project of the Karyar course. The goal of this project is to design three interconnected pages of a Persian online store while following the principles of HTML structure, user interface design, responsive layout, and accessibility.
 
