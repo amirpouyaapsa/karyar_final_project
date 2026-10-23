@@ -1,73 +1,71 @@
-# karyar_final_project
+# Bazarino | Karyar Course Final Project
 
-# بازارینو | پروژه فاینال دوره کاریار
+**Bazarino** is an e-commerce website design project developed using HTML5 and CSS3 as the final project of the Karyar course. The goal of this project is to design three interconnected pages of a Persian online store while following the principles of HTML structure, user interface design, responsive layout, and accessibility.
 
-**بازارینو** یک پروژه طراحی وب فروشگاهی است که به‌عنوان پروژه فاینال دوره کاریار و با استفاده از HTML5 و CSS3 پیاده‌سازی شده است. هدف پروژه، طراحی سه صفحه مرتبط از یک فروشگاه اینترنتی فارسی با رعایت اصول ساختاردهی HTML، طراحی رابط کاربری، چیدمان واکنش‌گرا و دسترس‌پذیری عناصر صفحه است.
+## Project Pages
 
-## معرفی صفحات پروژه
+### 1. Products Page (`products.html`)
 
-### ۱. صفحه فروشگاه (`products.html`)
+This page displays the products available in the Bazarino store and includes the following sections:
 
-این صفحه محصولات فروشگاه بازارینو را نمایش می‌دهد و شامل بخش‌های زیر است:
+- A shared header containing the logo, main navigation menu, shopping cart, and login link.
+- A breadcrumb navigation.
+- A store introduction section.
+- A product filter form based on category, price range, and user ratings.
+- A product search field.
+- A sorting menu with options for newest, lowest price, highest price, and most popular.
+- Six products displayed as product cards, each containing an image, name, price, and rating.
+- A shared footer containing the store description, relevant links, and copyright information.
 
-- هدر مشترک شامل لوگو، منوی اصلی، سبد خرید و ورود.
-- مسیر راهنمای صفحه (Breadcrumb).
-- بخش معرفی فروشگاه.
-- فرم فیلتر محصولات بر اساس دسته‌بندی، محدوده قیمت و امتیاز کاربران.
-- کادر جست‌وجوی محصولات.
-- منوی مرتب‌سازی بر اساس جدیدترین، ارزان‌ترین، گران‌ترین و محبوب‌ترین.
-- نمایش شش محصول در قالب کارت‌های محصول، همراه با تصویر، نام، قیمت و امتیاز.
-- فوتر مشترک شامل معرفی فروشگاه، لینک‌های مرتبط و حق نشر.
+### 2. Product Details Page (`product.html`)
 
-### ۲. صفحه جزئیات محصول (`product.html`)
+This page displays detailed information about the "FM Model Motorcycle Helmet" and includes the following features:
 
-این صفحه اطلاعات کامل محصول «کلاه کاسکت مدل FM» را نمایش می‌دهد و شامل موارد زیر است:
+- Breadcrumb navigation.
+- A product image gallery with three thumbnails and one main image.
+- A "Best Seller" badge.
+- The product name, user rating, and number of reviews.
+- Product description and feature information.
+- Product price and an Add to Cart button.
+- Stock availability and estimated shipping time.
+- A customer reviews section containing reviewer names, ratings, and review text.
+- A header and footer consistent with the other pages.
 
-- مسیر راهنمای صفحه.
-- گالری تصاویر محصول با سه تصویر کوچک و یک تصویر اصلی.
-- نشان «پرفروش».
-- نام محصول، امتیاز کاربران و تعداد دیدگاه‌ها.
-- توضیحات محصول و معرفی ویژگی‌های آن.
-- نمایش قیمت و دکمه افزودن به سبد خرید.
-- وضعیت موجودی و زمان ارسال.
-- بخش دیدگاه کاربران شامل نام، امتیاز و متن نظر.
-- هدر و فوتر هماهنگ با سایر صفحات سایت.
+### 3. Registration Page (`register.html`)
 
-### ۳. صفحه ثبت‌نام (`register.html`)
+This page provides a user account creation form and includes the following features:
 
-این صفحه برای طراحی فرم ایجاد حساب کاربری در نظر گرفته شده است و شامل موارد زیر است:
+- The shared website header.
+- A registration card with a title and description.
+- An email field with input type validation.
+- A mobile phone field with a validation pattern for Iranian mobile numbers.
+- A password field with a minimum length of 8 and a maximum length of 64 characters.
+- A password confirmation field.
+- Submit and Clear buttons.
+- HTML attributes for basic form validation.
+- A shared footer consistent with the other pages.
 
-- هدر مشترک سایت.
-- کارت ثبت‌نام با عنوان و توضیحات.
-- فیلد ایمیل با اعتبارسنجی نوع ورودی.
-- فیلد شماره همراه با الگوی اعتبارسنجی شماره موبایل ایران.
-- فیلد رمز عبور با حداقل ۸ و حداکثر ۶۴ کاراکتر.
-- فیلد تکرار رمز عبور.
-- دکمه ثبت‌نام و دکمه پاک کردن اطلاعات فرم.
-- استفاده از ویژگی‌های HTML برای اعتبارسنجی اولیه فرم.
-- فوتر مشترک با سایر صفحات.
+## Technologies and Tools Used
 
-## فناوری‌ها و ابزارهای استفاده‌شده
+- **HTML5:** Structuring pages, using semantic elements, and creating forms.
+- **CSS3:** Designing the user interface, styling components, and arranging page sections.
+- **Flexbox:** Organizing layouts and aligning page elements.
+- **CSS Reset:** Normalizing browser default styles using the `reset.css` file.
+- **Persian Font:** Using a Persian font to improve the readability of the website content.
+- **Git and GitHub:** Version control and project repository hosting.
 
-- **HTML5:** ساختاردهی صفحات، استفاده از عناصر معنایی و ایجاد فرم‌ها.
-- **CSS3:** طراحی رابط کاربری، استایل‌دهی اجزا و چیدمان بخش‌های مختلف.
-- **Flexbox:** تنظیم چیدمان و هم‌ترازی عناصر صفحه.
-- **CSS Reset:** یکسان‌سازی رفتار پیش‌فرض مرورگرها با استفاده از فایل `reset.css`.
-- **فونت فارسی:** استفاده از فونت فارسی برای خوانایی بهتر محتوای سایت.
-- **Git و GitHub:** مدیریت نسخه‌ها و میزبانی مخزن پروژه.
+## Technical Features
 
-## ویژگی‌های فنی پروژه
+- Support for the Persian language and right-to-left text direction (`RTL`).
+- Use of semantic HTML elements such as `header`, `nav`, `main`, `section`, `article`, `aside`, and `footer`.
+- Use of labels associated with form fields to improve accessibility.
+- Alternative text for product images using the `alt` attribute.
+- Use of form validation attributes such as `required`, `pattern`, `minlength`, and `maxlength`.
+- Consistent header, main navigation, and footer design across all three pages.
+- Separate CSS files for each page to improve style management.
+- Use of local images to display products.
 
-- پشتیبانی از زبان فارسی و جهت نوشتار راست‌به‌چپ (`RTL`).
-- استفاده از ساختار معنایی HTML مانند `header`، `nav`، `main`، `section`، `article`، `aside` و `footer`.
-- استفاده از برچسب‌های مرتبط با فیلدهای فرم برای بهبود دسترس‌پذیری.
-- تعریف متن جایگزین برای تصاویر محصولات با ویژگی `alt`.
-- استفاده از ویژگی‌های اعتبارسنجی فرم مانند `required`، `pattern`، `minlength` و `maxlength`.
-- طراحی هماهنگ هدر، منوی اصلی و فوتر در هر سه صفحه.
-- تفکیک فایل‌های CSS هر صفحه برای مدیریت بهتر استایل‌ها.
-- استفاده از تصاویر محلی برای نمایش محصولات.
-
-## ساختار فایل‌های پروژه
+## Project File Structure
 
 ```text
 Bazarino/
@@ -95,38 +93,35 @@ Bazarino/
 └── README.md
 ```
 
-این ساختار، چیدمان پیشنهادی فایل‌های پروژه بر اساس مسیرهای استفاده‌شده در HTML است. پوشه فونت نیز در صورت استفاده از فایل فونت محلی باید به ساختار اضافه شود.
+This structure represents the suggested organization of the project files based on the paths used in the HTML. If a local font file is used, a fonts directory should also be added to the structure.
 
-## نحوه اجرای پروژه
+## How to Run the Project
 
-از آنجا که پروژه با HTML و CSS ساخته شده است، برای اجرای اولیه به نصب وابستگی یا راه‌اندازی سرور نیاز ندارد.
+Since the project is built with HTML and CSS, it does not require any dependencies or a server setup for basic execution.
 
-۱. مخزن پروژه را از GitHub دریافت کنید یا آن را دانلود کنید.
+1. Clone the project repository from GitHub or download it.
+2. Place `products.html`, `product.html`, and `register.html` alongside the `css` and `assets` directories.
+3. Open `products.html` in a web browser.
+4. Navigate to the other pages using the links in the header and product cards.
 
-۲. فایل `products.html`، `product.html` و `register.html` را در کنار پوشه‌های `css` و `assets` قرار دهید.
+## Limitations of the Current Version
 
-۳. فایل `products.html` را در مرورگر باز کنید.
+This project is a front-end user interface prototype. In its current version:
 
-۴. برای مشاهده سایر صفحات، از لینک‌های موجود در هدر و کارت‌های محصولات استفاده کنید.
+- Search, filtering, and sorting are not connected to functional client-side logic.
+- Adding products to the shopping cart does not have actual functionality.
+- Registration is not connected to an authentication system or database.
+- Matching the password and password confirmation fields requires custom validation.
+- Links defined with `#` have not yet been connected to actual pages or functionality.
 
-## محدودیت‌های نسخه فعلی
+## Educational Objective
 
-این پروژه یک نمونه رابط کاربری فرانت‌اند است و در نسخه فعلی:
-
-- جست‌وجو، فیلتر و مرتب‌سازی به منطق اجرایی سمت کاربر متصل نشده‌اند.
-- افزودن محصول به سبد خرید عملکرد واقعی ندارد.
-- ثبت‌نام به سامانه احراز هویت یا پایگاه داده متصل نیست.
-- تطبیق رمز عبور و تکرار آن به اعتبارسنجی اختصاصی نیاز دارد.
-- لینک‌هایی که با `#` تعریف شده‌اند، هنوز به صفحات یا قابلیت‌های واقعی متصل نشده‌اند.
-
-## هدف آموزشی
-
-این پروژه با هدف به‌کارگیری عملی مباحث HTML و CSS در قالب یک وب‌سایت فروشگاهی طراحی شده و بخشی از فعالیت پایانی دوره کاریار است. در پیاده‌سازی آن، تمرکز بر ساختار صحیح صفحات، طراحی فرم‌ها، استفاده از عناصر معنایی، چیدمان با Flexbox و ایجاد یک رابط کاربری یکپارچه بوده است.
+This project was developed to apply HTML and CSS concepts in a practical e-commerce website and serves as the final project of the Karyar course. The implementation focuses on proper page structure, form design, semantic HTML elements, Flexbox layouts, and creating a consistent user interface.
 
 ---
 
-**عنوان پروژه:** بازارینو (Bazarino)  
-**نوع پروژه:** پروژه فاینال دوره کاریار  
-**حوزه:** طراحی رابط کاربری وب  
-**فناوری‌ها:** HTML5 و CSS3  
-**زبان رابط کاربری:** فارسی (RTL)
+**Project Name:** Bazarino  
+**Project Type:** Karyar Course Final Project  
+**Field:** Web User Interface Design  
+**Technologies:** HTML5 and CSS3  
+**Interface Language:** Persian (RTL)
