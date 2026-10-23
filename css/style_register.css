@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "MyVazirmatn";
+    src: url("../font/Vazirmatn[wght].woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* رنگ‌ها */
+    --color-primary: #1e998f;
+    --color-accent: #F59E0B;
+    --color-text: #14213D;
+    --color-background: #F8FAFC;
+    --color-border: #E5E7EB;
+    --color-white: #FFFFFF;
+    --color-primary-light: #CCFBF1;
+    --color-success: #0F766E;
+    --color-muted: #64748B;
+    --color-footer: #14213D;
+    --color-footer-text: #E2E8F0;
+
+    /* گوشه‌های گرد */
+    --radius-card: 16px;
+    --radius-button: 8px;
+    --radius-pill: 8px;
+
+    /* سایهٔ کارت‌ها */
+    --shadow-card: 0 4px 12px rgba(20, 33, 61, 0.06);
+
+    /* فاصله‌گذاری */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: "MyVazirmatn", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "MyVazirmatn", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    margin: 0;
+}
+
+/* ====================================================== هدر سایت  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding-inline: 100px;
+}
+
+/* لوگو */
+.logo {
+    color: var(--color-success);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* منوی اصلی */
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a,
+.header-actions a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.header-actions a:hover {
+    color: var(--color-primary);
+}
+
+/* ورود و سبد خرید */
+.header-actions {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: var(--space-2);
+    white-space: nowrap;
+}
+
+/* کل بخش سبد خرید */
+.cart-link {
+    padding: 10px 14px;
+    gap: 8px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+
+/* ===================================== بدنه اصلی  */
+
+/* بدنه اصلی صفحه */
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 24px;
+}
+
+/* کارت ثبت‌نام */
+.register-card {
+    width: 100%;
+    max-width: 448px;
+    padding: 32px 30px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+}
+
+/* عنوان کارت */
+.register-card h1 {
+    margin: 0 0 8px;
+    color: var(--color-text);
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* متن توضیحی کارت */
+.register-card > p {
+    margin: 0 0 24px;
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* فرم ثبت‌نام */
+.register-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* هر فیلد فرم */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* برچسب فیلدها */
+.form-group label {
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* کادرهای ورودی */
+.form-group input {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 11px;
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* رنگ متن راهنما */
+.form-group input::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+}
+
+/* حالت عادی: فیلد هنوز خالی است */
+.form-group input:placeholder-shown {
+    border-color: #CBD5E1;
+}
+
+/* فیلد پرشده و معتبر */
+.form-group input:not(:placeholder-shown):valid {
+    border-color: var(--color-success);
+}
+
+/* فیلد پرشده و نامعتبر */
+.form-group input:not(:placeholder-shown):invalid {
+    border-color: #EF4444;
+}
+
+/* فوکوس: هاله سبز در همه حالت‌ها */
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.15);
+}
+
+/* جهت نوشتن ایمیل */
+#email {
+    direction: ltr;
+    text-align: left;
+}
+
+/* چیدمان دکمه‌ها */
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+/* تنظیمات مشترک دکمه‌ها */
+.form-buttons button {
+    flex: 1;
+    min-height: 48px;
+    padding: 12px 16px;
+    border-radius: var(--radius-button);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+/* دکمه ثبت‌نام */
+.form-buttons button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+
+/* حالت هاور ثبت‌نام */
+.form-buttons button[type="submit"]:hover {
+    background-color: var(--color-success);
+    border-color: var(--color-success);
+}
+
+/* دکمه پاک کردن */
+.form-buttons button[type="reset"] {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+}
+
+/* حالت هاور پاک کردن */
+.form-buttons button[type="reset"]:hover {
+    background-color: var(--color-background);
+    border-color: #CBD5E1;
+}
+
+/* حالت فوکوس با صفحه‌کلید */
+.form-buttons button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.2);
+}
+
+/*========================================================== فوتر سایت */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4) 100px;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
+    margin-top: 0px;
+}
+
+.footer a {
+    color: var(--color-footer-text);
+    text-decoration: none;
+}

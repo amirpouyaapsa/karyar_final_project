@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه | بازارینو</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_products.css">
+</head>
+<body>
+    <header class="header">
+        <a href="products.html" class="logo">بازارینو</a>
+        <nav class="nav" aria-label="منوی اصلی">
+            <ul>
+                <li><a href="products.html">خانه</a></li>
+                <li><a href="products.html">فروشگاه</a></li>
+                <li><a href="product.html">دسته‌بندی‌ها</a></li>
+                <li><a href="#">درباره ما</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="cart-link" href="#">سبد خرید
+                <span aria-hidden="true">·</span>
+                <span class="cart-count">۲</span>
+            </a>
+            <a href="register.html">ورود</a>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="page-intro">
+            <nav aria-label="مسیر صفحه">
+                <ol>
+                    <li><a href="products.html">خانه</a></li>
+                    <li aria-current="page">فروشگاه</li>
+                </ol>
+            </nav>
+            <h1>فروشگاه</h1>
+            <p>محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</p>
+        </div>
+
+        <div class="shop-layout">
+            <aside class="aside">
+                <form class="filter-form" action="#" method="get">
+                    <h2>فیلتر محصولات</h2>
+                    <fieldset>
+                        <legend>دسته‌بندی محصولات</legend>
+                        <label>
+                            <input type="checkbox" name="category" value="digital">
+                            <span>دیجیتال و گجت</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="home">
+                            <span>خانه و سبک زندگی</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="category" value="accessories">
+                            <span>لوازم شخصی</span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>محدوده قیمت</legend>
+                        <label>
+                            <input type="radio" name="price" value="under-2">
+                            <span>کمتر از ۲ میلیون</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="price" value="2-5">
+                            <span>۲ تا ۵ میلیون تومان</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="price" value="above-5">
+                            <span>بیشتر از ۵ میلیون تومان</span>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>امتیاز کاربران</legend>
+                        <label>
+                            <input type="checkbox" name="rating" value="above-4">
+                            <span>۴ ستاره به بالا</span>
+                        </label>
+                    </fieldset> 
+                </form>
+            </aside>
+
+            <main class="main">
+                <div class="products-toolbar">
+                    <form class="search-form" action="#" method="get">
+                        <input type="search" id="product-search" name="search" placeholder="جستجو در محصولات..." aria-label="جستجو در محصولات">
+                    </form>
+                    <div class="sort-products">
+                        <label for="sort">مرتب‌سازی:</label>
+                        <select id="sort" name="sort">
+                            <option value="newest">جدیدترین</option>
+                            <option value="cheapest">ارزان‌ترین</option>
+                            <option value="expensive">گران‌ترین</option>
+                            <option value="popular">محبوب‌ترین</option>
+                        </select>
+                    </div>
+                    <p class="products-count">نمایش ۶ محصول</p>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img class="image-card" src="assets/Epson.webp" alt="پروژکتور اپسون" width="200" height="200">
+                        <h3>
+                            <a href="product.html">پروژکتور مدل اپسون</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۲,۴۹۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۷</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="image-card" src="assets/iPhone_Duo_eSIM.webp" alt="گوشی موبایل آیفون تاشو" width="200" height="200">
+                        <h3>
+                            <a href="product.html">گوشی موبایل آیفون تاشو</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۳,۹۹۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۵</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="image-card" src="assets/Nova_Pro_Omni.webp" alt="هدفون گیمینگ" width="200" height="200">
+                        <h3>
+                            <a href="product.html">هدفون گیمینگ</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۵,۷۹۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۸</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="image-card" src="assets/Omega_3.webp" alt="قوطی کپسول امگا 3" width="200" height="200">
+                        <h3>
+                            <a href="product.html">قوطی کپسول امگا 3</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۱,۸۹۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۵</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="image-card" src="assets/Red_line_FM01.webp" alt="کلاه کاسکت مدل اف ام" width="200" height="200">
+                        <h3>
+                            <a href="product.html">کلاه کاسکت مدل FM</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۱,۴۵۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۳</p>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img class="image-card" src="assets/Surface_Laptop_7.webp" alt="لپتاپ سرفیس سری 7" width="200" height="200">
+                        <h3>
+                            <a href="product.html">لپتاپ سرفیس سری 7</a>
+                        </h3>
+                        <div class="product-info">
+                            <p>۸۹۰,۰۰۰ تومان</p>
+                            <p class="product-rating">★۴٫۴</p>
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-right">
+            بازارینو؛ خرید ساده و مطمئن
+        </div>
+
+        <nav class="footer-center" aria-label="لینک‌های فوتر">
+            <a href="#">پشتیبانی</a>
+            <span aria-hidden="true">·</span>
+            <a href="#">قوانین و شرایط</a>
+            <span aria-hidden="true">·</span>
+            <a href="#">اینستاگرام</a>
+        </nav>
+
+        <div class="footer-left">
+            © ۱۴۰۵
+        </div>
+    </footer>
+</body>
+</html>

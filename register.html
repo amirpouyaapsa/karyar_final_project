@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت‌نام | بازارینو</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_register.css">
+</head>
+<body>
+    <header class="header">
+        <a href="products.html" class="logo">بازارینو</a>
+        <nav class="nav" aria-label="منوی اصلی">
+            <ul>
+                <li><a href="products.html">خانه</a></li>
+                <li><a href="products.html">فروشگاه</a></li>
+                <li><a href="product.html">دسته‌بندی‌ها</a></li>
+                <li><a href="#">درباره ما</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a class="cart-link" href="#">سبد خرید
+                <span aria-hidden="true">·</span>
+                <span class="cart-count">۲</span>
+            </a>
+            <a href="register.html">ورود</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="register-card">
+            <h1>ساخت حساب کاربری</h1>
+            <p>برای خرید سریع‌تر، حساب بازارینو را بسازید</p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">ایمیل</label>
+                    <input id="email" type="email" name="email" placeholder="name@example.com" autocomplete="email" dir="ltr" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">شماره همراه</label>
+                    <input id="phone" type="tel" name="phone" placeholder="09123456789" pattern="09[0-9]{9}" 
+                        title="شماره همراه باید با 09 شروع شود و ۱۱ رقم داشته باشد." 
+                        autocomplete="tel"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">رمز عبور</label>
+                    <input id="password" type="password" name="password" placeholder="حداقل 8 کارکتر" minlength="8" maxlength="64"  autocomplete="new-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">تکرار رمز عبور</label>
+                    <input id="confirm-password" type="password" name="confirm-password" 
+                        placeholder="رمز عبور را دوباره وارد کنید" minlength="8" maxlength="64" 
+                        autocomplete="new-password" required>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">ثبت‌نام</button>
+                    <button type="reset">پاک کردن</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-right">
+            بازارینو؛ خرید ساده و مطمئن
+        </div>
+
+        <nav class="footer-center" aria-label="لینک‌های فوتر">
+            <a href="#">پشتیبانی</a>
+            <span aria-hidden="true">·</span>
+            <a href="#">قوانین و شرایط</a>
+            <span aria-hidden="true">·</span>
+            <a href="#">اینستاگرام</a>
+        </nav>
+
+        <div class="footer-left">
+            © ۱۴۰۵
+        </div>
+    </footer>
+</body>
+</html>

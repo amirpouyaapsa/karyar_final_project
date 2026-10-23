@@ -1,0 +1,519 @@
+
+@font-face {
+    font-family: "MyVazirmatn";
+    src: url("../font/Vazirmatn[wght].woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* رنگ‌ها */
+    --color-primary: #1e998f;
+    --color-accent: #F59E0B;
+    --color-text: #14213D;
+    --color-background: #F8FAFC;
+    --color-border: #E5E7EB;
+    --color-white: #FFFFFF;
+    --color-primary-light: #CCFBF1;
+    --color-success: #0F766E;
+    --color-muted: #64748B;
+    --color-footer: #14213D;
+    --color-footer-text: #E2E8F0;
+
+    /* گوشه‌های گرد */
+    --radius-card: 16px;
+    --radius-button: 8px;
+    --radius-pill: 8px;
+
+    /* سایهٔ کارت‌ها */
+    --shadow-card: 0 4px 12px rgba(20, 33, 61, 0.06);
+
+    /* فاصله‌گذاری */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: "MyVazirmatn", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "MyVazirmatn", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+/* ====================================================== هدر سایت  */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    padding-inline: 70px;
+}
+
+/* لوگو */
+.logo {
+    color: var(--color-success);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* منوی اصلی */
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav a,
+.header-actions a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav a:hover,
+.header-actions a:hover {
+    color: var(--color-primary);
+}
+
+/* ورود و سبد خرید */
+.header-actions {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+    gap: var(--space-2);
+    white-space: nowrap;
+}
+
+/* کل بخش سبد خرید */
+.cart-link {
+    padding: 10px 14px;
+    gap: 8px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
+/* ====================================================== مسیر راهنما */
+.breadcrumb {
+    color: var(--color-muted);
+    font-size: 14px;
+    margin-block: var(--space-3);
+    padding-inline: 70px;
+}
+
+.breadcrumb ol {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    color: var(--color-muted);
+}
+
+.breadcrumb a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--color-primary);
+}
+
+/* ============================================= چیدمان اصلی */
+/* محتوای کلی صفحه */
+.page-content {
+    padding: 32px 70px 0;
+}
+
+/* معرفی صفحه فروشگاه */
+.page-intro {
+    margin-bottom: 36px;
+    text-align: right;
+}
+
+/* مسیر راهنما */
+.page-intro nav {
+    margin-bottom: 12px;
+    color: var(--color-muted);
+    font-size: 14px;
+}
+
+.page-intro ol {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-intro li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.page-intro li:not(:last-child)::after {
+    content: "/";
+    color: var(--color-muted);
+}
+
+.page-intro nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.page-intro nav a:hover {
+    color: var(--color-primary);
+}
+
+/* عنوان فروشگاه */
+.page-intro h1 {
+    margin: 0 0 20px;
+    color: var(--color-text);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+/* توضیحات زیر عنوان */
+.page-intro p {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ============================================= فیلتر محصولات */
+/* ستون سمت راست */
+.aside {
+    width: 258px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+}
+
+/* فرم فیلتر */
+.filter-form {
+    padding: 20px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+}
+
+/* عنوان فیلتر محصولات */
+.filter-form h2 {
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* هر گروه از فیلترها */
+.filter-form fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0 0 18px;
+    border: 0;
+}
+
+/* فاصله و خط جداکننده بین گروه‌ها */
+.filter-form fieldset{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-border);
+}
+/* حذف خط زیر آخرین گروه فیلتر */
+.filter-form fieldset:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* عنوان هر گروه */
+.filter-form legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 0;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* گزینه‌های فیلتر */
+.filter-form label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+/* حذف فاصله اضافه از آخرین گزینه */
+.filter-form label:last-child {
+    margin-bottom: 0;
+}
+
+/* چک‌باکس و دکمه‌های رادیویی */
+.filter-form input[type="checkbox"],
+.filter-form input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 0;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* ===================================================== فیلتر جستجو */
+
+/* چیدمان فیلتر و محصولات */
+.shop-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+/* ستون اصلی محصولات */
+.main {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* نوار جستجو */
+.search-form {
+    width: 100%;
+}
+
+.search-form input[type="search"] {
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-button);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-family: "MyVazirmatn", sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* متن راهنمای جستجو */
+.search-form input[type="search"]::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+}
+
+/* حالت فوکوس */
+.search-form input[type="search"]:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.12);
+}
+
+/* نوار جستجو در تمام عرض */
+.search-form {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+/* ===============================================  */
+
+
+/* نوار جستجو، مرتب‌سازی و تعداد محصولات */
+.products-toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 16px;
+    /* margin-top: 16px; */
+    margin-bottom: 20px;
+}
+
+
+/* نوار مرتب‌سازی */
+.sort-products {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-text);
+    font-family: "MyVazirmatn", sans-serif;
+    font-size: 14px;
+}
+
+/* عنوان مرتب‌سازی */
+.sort-products label {
+    color: var(--color-text);
+    font-family: "MyVazirmatn", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* منوی انتخاب مرتب‌سازی */
+.sort-products select {
+    padding: 9px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-button);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-family: "MyVazirmatn", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* جهت اعمال فونت به گزینه های سورت */
+.sort-products select,
+.sort-products select option {
+    font-family: "MyVazirmatn", sans-serif;
+}
+
+/* تعداد محصولات در سمت چپ */
+.products-count {
+    grid-column: 2;
+    justify-self: end;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+/* ============================================= چیدمان محصولات*/
+
+/* چیدمان محصولات */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+/* کارت محصول */
+.product-card {
+    min-width: 0;
+    padding: 16px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+}
+
+/* تصویر محصول */
+.image-card {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* عنوان محصول */
+.product-card h3 {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+
+.product-card h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.product-card h3 a:hover {
+    color: var(--color-primary);
+}
+
+/* قیمت و امتیاز محصول */
+.product-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.product-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.product-info p:first-child {
+    color: var(--color-text);
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.product-info .product-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-accent);
+    white-space: nowrap;
+}
+
+/*========================================================== فوتر سایت */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4) 100px;
+    background-color: var(--color-footer);
+    color: var(--color-footer-text);
+    margin-top: 24px;
+}
+
+.footer a {
+    color: var(--color-footer-text);
+    text-decoration: none;
+}
+
