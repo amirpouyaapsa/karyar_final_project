@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "MyVazirmatn";
     src: url("../font/Vazirmatn[wght].woff2") format("woff2");
@@ -122,7 +123,7 @@ body {
     color: var(--color-primary);
 }
 
-/* ===================================== بدنه اصلی  */
+/* ======================================================= بدنه اصلی  */
 
 /* بدنه اصلی صفحه */
 .main {
@@ -221,6 +222,7 @@ body {
 /* فوکوس: هاله سبز در همه حالت‌ها */
 .form-group input:focus {
     outline: none;
+    border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.15);
 }
 
@@ -298,4 +300,50 @@ body {
 .footer a {
     color: var(--color-footer-text);
     text-decoration: none;
+}
+
+/* واکنش‌گرایی صفحه ثبت‌نام */
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .nav {
+        order: 1;
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 12px 16px;
+    }
+
+    .main {
+        padding: 24px 16px;
+    }
+
+    .register-card {
+        width: 100%;
+        max-width: 448px;
+        padding: 24px 20px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-card {
+        padding: 20px 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
