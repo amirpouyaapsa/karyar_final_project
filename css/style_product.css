@@ -387,3 +387,22 @@ h1 {
         align-items: flex-start;
     }
 }
+
+/* حالت تاریک */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #E2E8F0;
+        --color-background: #0F172A;
+        --color-border: #334155;
+        --color-white: #1E293B;
+        --color-primary-light: #134E4A;
+        --color-success: #34D399;
+        --color-muted: #94A3B8;
+        --color-footer: #020617;
+        --color-footer-text: #E2E8F0;
+    }
+}
+.description,
+.review-text {
+    color: var(--color-text);
+}

@@ -433,6 +433,8 @@ body {
 .product-card {
     min-width: 0;
     padding: 16px;
+    /* padding: 0 16px 16px; */
+    overflow: hidden;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-card);
@@ -443,9 +445,17 @@ body {
 .image-card {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-    border-radius: 8px;
+    /* max-width: none; */
+    /* margin: -1px -17px 16px; */
+    /* aspect-ratio: 1 / 1;
+    object-fit: contain; */
+    /* object-fit: cover; */
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 16px;
+    border-radius: 16px;
+    border-radius: 16px;
     margin-bottom: 16px;
 }
 
@@ -634,3 +644,22 @@ body {
     }
 }
 
+/* حالت تاریک */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #E2E8F0;
+        --color-background: #0F172A;
+        --color-border: #334155;
+        --color-white: #1E293B;
+        --color-primary-light: #134E4A;
+        --color-success: #34D399;
+        --color-muted: #94A3B8;
+        --color-footer: #020617;
+        --color-footer-text: #E2E8F0;
+    }
+    .free-shipping {
+        /* background-color: #1e998f; */
+        background-color: #13544e;
+        color: #31e1bb;
+    }
+}
