@@ -157,10 +157,18 @@ body {
 /* بخش اصلی محصول */
 .product {
     display: grid;
-    grid-template-columns: 100px 400px minmax(0, 1fr);
+    grid-template-columns: 500px minmax(0, 1fr);
     gap: var(--space-4);
     align-items: start;
     padding-inline: 100px;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: 100px minmax(0, 400px);
+    gap: 16px;
+    align-items: start;
+    min-width: 0;
 }
 
 /* تصاویر کوچک محصول */
@@ -373,6 +381,43 @@ h1 {
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
         padding-inline: 16px;
+    }
+
+    .product-gallery {
+        display: grid;
+        grid-template-columns: 80px minmax(0, 1fr);
+        gap: 12px;
+        align-items: start;
+        min-width: 0;
+    }
+
+    .gallery {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+    }
+
+    .mini-gallery {
+        grid-column: 1;
+        grid-row: 1;
+        flex-direction: column;
+        gap: 12px;
+        min-width: 0;
+    }
+
+    .thumbnail {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .product-image {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
     }
 
     .footer {
