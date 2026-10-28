@@ -88,6 +88,7 @@ body {
 .header-actions a {
     color: var(--color-text);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav a:hover,
@@ -158,6 +159,7 @@ body {
 .page-intro nav a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .page-intro nav a:hover {
@@ -272,9 +274,10 @@ body {
     min-width: 0;
 }
 
-/* نوار جستجو */
+/* نوار جستجو در تمام عرض */
 .search-form {
-    width: 100%;
+    grid-column: 1 / -1;
+    /* width: 100%; */
 }
 
 .search-form input[type="search"] {
@@ -286,10 +289,9 @@ body {
     border-radius: var(--radius-button);
     background-color: var(--color-white);
     color: var(--color-text);
-    font-family: "MyVazirmatn", sans-serif;
     font-size: 14px;
     outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* متن راهنمای جستجو */
@@ -301,21 +303,16 @@ body {
 /* حالت فوکوس */
 .search-form input[type="search"]:focus {
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.12);
+    box-shadow: 0 0 0 3px rgba(30, 153, 143, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* نوار جستجو در تمام عرض */
-.search-form {
-    grid-column: 1 / -1;
-    width: 100%;
-}
 /*======================================================= نوار جستجو، مرتب‌سازی و تعداد محصولات */
 .products-toolbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 16px;
-    /* margin-top: 16px; */
     margin-bottom: 20px;
 }
 
@@ -324,9 +321,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--color-text);
-    font-family: "MyVazirmatn", sans-serif;
-    font-size: 14px;
 }
 
 /* عنوان مرتب‌سازی */
@@ -350,12 +344,6 @@ body {
     cursor: pointer;
 }
 
-/* جهت اعمال فونت به گزینه های سورت */
-.sort-products select,
-.sort-products select option {
-    font-family: "MyVazirmatn", sans-serif;
-}
-
 /* تعداد محصولات در سمت چپ */
 .products-count {
     grid-column: 2;
@@ -366,8 +354,7 @@ body {
     white-space: nowrap;
 }
 
-/* ============================================= چیدمان محصولات*/
-/* چیدمان محصولات */
+/*========================================================= چیدمان محصولات */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -379,7 +366,6 @@ body {
 .product-card {
     min-width: 0;
     padding: 16px;
-    /* padding: 0 16px 16px; */
     overflow: hidden;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
@@ -391,29 +377,19 @@ body {
 .image-card {
     display: block;
     width: 100%;
-    /* max-width: none; */
-    /* margin: -1px -17px 16px; */
-    /* aspect-ratio: 1 / 1;
-    object-fit: contain; */
-    /* object-fit: cover; */
-    display: block;
-    max-width: 100%;
     height: auto;
     margin: 0 auto 16px;
     border-radius: 16px;
-    border-radius: 16px;
-    margin-bottom: 16px;
 }
 
 /* تگ ارسال رایگان */
 .free-shipping {
     display: inline-block;
-    align-self: flex-start;
     margin-top: 6px;
     margin-bottom: 6px;
     padding: 8px 14px;
     background-color: #E8FAF3;
-    color: #0F766E;
+    color: var(--color-success);
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -426,15 +402,16 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
+    transition: color 0.3s ease;
 }
 
 .product-card a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
-.product-card h3 a:hover {
+.product-card a:hover h3 {
+    transition: color 0.3s ease;
     color: var(--color-primary);
 }
 
@@ -459,13 +436,9 @@ body {
 }
 
 .product-info .product-rating {
-    display: flex;
-    align-items: center;
-    gap: 4px;
     color: var(--color-accent);
     white-space: nowrap;
 }
-
 /*========================================================== فوتر سایت */
 .footer {
     display: flex;
