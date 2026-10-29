@@ -94,7 +94,6 @@ body {
 .nav a:hover,
 .header-actions a:hover {
     color: var(--color-primary);
-    transition: color 0.3s ease;
 }
 
 /* تنظیم ورود و سبد خرید */
