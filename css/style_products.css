@@ -163,7 +163,6 @@ body {
 
 .page-intro nav a:hover {
     color: var(--color-primary);
-    transition: color 0.3s ease;
 }
 /* ======================================== مسیر راهنما */
 /* عنوان فروشگاه */
