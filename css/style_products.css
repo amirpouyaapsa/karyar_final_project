@@ -48,14 +48,7 @@ select {
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-}
-
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-family: "MyVazirmatn", sans-serif;
     color: var(--color-text);
     background-color: var(--color-background);
