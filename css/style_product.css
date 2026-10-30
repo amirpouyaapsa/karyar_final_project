@@ -67,11 +67,11 @@ body {
 
 /* لوگو */
 .logo {
-    color: var(--color-success);
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: none;
     white-space: nowrap;
+    color: var(--color-success);
 }
 
 /* منوی اصلی */
@@ -86,8 +86,8 @@ body {
 
 .nav a,
 .header-actions a {
-    color: var(--color-text);
     text-decoration: none;
+    color: var(--color-text);
     transition: color 0.3s ease;
 }
 
@@ -107,13 +107,13 @@ body {
 
 /*  تنظیم سبد خرید و تعداد محصول */
 .cart-link {
-    padding: 10px 14px;
     display: flex;
+    padding: 10px 14px;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-1);
+    color: var(--color-primary);
     border-radius: var(--radius-button);
     background-color: var(--color-primary-light);
-    color: var(--color-primary);
 }
 /* ====================================================== مسیر راهنما */
 .main {

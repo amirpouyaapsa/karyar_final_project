@@ -67,11 +67,11 @@ body {
 
 /* لوگو */
 .logo {
-    color: var(--color-success);
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 900;
     text-decoration: none;
     white-space: nowrap;
+    color: var(--color-success);
 }
 
 /* منوی اصلی */
@@ -86,8 +86,8 @@ body {
 
 .nav a,
 .header-actions a {
-    color: var(--color-text);
     text-decoration: none;
+    color: var(--color-text);
     transition: color 0.3s ease;
 }
 
@@ -107,13 +107,13 @@ body {
 
 /*  تنظیم سبد خرید و تعداد محصول */
 .cart-link {
-    padding: 10px 14px;
     display: flex;
+    padding: 10px 14px;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-1);
+    color: var(--color-primary);
     border-radius: var(--radius-button);
     background-color: var(--color-primary-light);
-    color: var(--color-primary);
 }
 
 /* =========================================================== چیدمان اصلی */
@@ -127,7 +127,6 @@ body {
     margin-bottom: 36px;
     text-align: right;
 }
-
 /* ======================================= مسیر راهنما */
 .page-intro nav {
     margin-bottom: 12px;
@@ -235,7 +234,7 @@ body {
 .filter-form label {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--space-1);
     margin-bottom: 10px;
     color: var(--color-muted);
     font-size: 14px;
@@ -263,7 +262,7 @@ body {
 .shop-layout {
     display: flex;
     align-items: flex-start;
-    gap: 24px;
+    gap: var(--space-3);
 }
 
 /* ستون اصلی محصولات */
@@ -310,7 +309,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap: 16px;
+    gap: var(--space-2);
     margin-bottom: 20px;
 }
 
@@ -318,7 +317,7 @@ body {
 .sort-products {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--space-1);
 }
 
 /* عنوان مرتب‌سازی */
@@ -356,7 +355,7 @@ body {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    gap: var(--space-3);
     margin-top: 20px;
 }
 
@@ -418,7 +417,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
 }
 
 .product-info p {
